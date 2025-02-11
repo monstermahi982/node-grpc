@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package demo;
+
+service TableService {
+  rpc GenerateTable (NumberRequest) returns (stream TableResponse);
+}
+
+message NumberRequest {
+  int32 number = 1;
+}
+
+message TableResponse {
+  int32 row = 1;
+  string result = 2;
+}

@@ -8,7 +8,7 @@ export default function Home() {
     const data = { name: "Mahesh", age: 30 };
 
     try {
-      const response = await fetch("/api/grpc", {
+      const response = await fetch("/api/grpc2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
